@@ -1,1 +1,46 @@
+/* TYPE: 
+Titles/Headers:    Montserrat Regular 400
+Paragraphs/Links:    Playfair Display Regular 400
+*/
+
+/* COLORS:
+PINK:   #FF1C69
+IVORY:  #F2E9D0
+LIGHT GREEN:    #9AED3B
+DARK GREEN:     #328c53
+*/
+
+/* CSS for all pages */
+
+body {
+    font-size: 18px;
+    font-family: "Playfair Display", sans-serif;
+}
+
+
+.title img {
+    width: 150px;
+    height: auto;
+}
+
+.title-f img {
+    width: 100px;
+    height: auto;
+}
+
+
+/* CSS for index.html */
+
+
+/* CSS for fresh.html */
+
+/* CSS for about-us.html */
+
+/* CSS for attributions.html */
+
+/* Media queries */
+
+/* Media query for medium viewport */
+
+/* Media query for large viewport */
 
