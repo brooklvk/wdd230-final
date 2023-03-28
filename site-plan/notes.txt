@@ -1,0 +1,11 @@
+Notes from Chamber of Commerce Website feedback: 
+
+- use object-fit: cover for hero image, and place text absolute over image 
+- let people know what page they are on (highlight in nav, title on page)
+- join form: note that * means required input 
+- join form: larger radio buttons for clickability 
+- title (of tab) more descriptive and advertising 
+- meta descriptions more advertisey and longer 
+- more content (like a form) on Contact page 
+- didn't do number of visits 
+
