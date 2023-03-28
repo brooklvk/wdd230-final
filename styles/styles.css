@@ -1,31 +1,70 @@
 /* TYPE: 
-Titles/Headers:    Montserrat Regular 400
-Paragraphs/Links:    Playfair Display Regular 400
+    Titles/Headers:    Montserrat Regular 400
+    Paragraphs/Links:    Playfair Display Regular 400
 */
 
-/* COLORS:
-PINK:   #FF1C69
-IVORY:  #F2E9D0
-LIGHT GREEN:    #9AED3B
-DARK GREEN:     #328c53
+/* COLORS: (adjusted from Illustrator to be visually similar) 
+    PINK:   #FF1C69
+    IVORY:  #F2E9D0
+    LIGHT GREEN:    #9AED3B
+    DARK GREEN:     #328c53
 */
 
 /* CSS for all pages */
 
 body {
-    font-size: 18px;
     font-family: "Playfair Display", sans-serif;
+    font-size: 18px;
+    background-color: #F2E9D0;
 }
 
+/* Header */
+
+header {
+    background-color: #328c53;
+}
 
 .title img {
     width: 150px;
     height: auto;
 }
 
+.title h1 {
+    font-family: "Montserrat", sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.menu {
+    display: none;
+}
+
+/* a div w logo links */
+.social {
+    
+}
+
+/* Main */
+
+
+
+
+/* Footer */
+
 .title-f img {
     width: 100px;
     height: auto;
+}
+
+.title-f h2 {
+    font-family: "Montserrat", sans-serif;
 }
 
 
