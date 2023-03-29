@@ -78,7 +78,6 @@ nav a {
     width: 40px;
 }
 
-
 /* Main - none*/
 
 /* Footer */
@@ -191,7 +190,6 @@ footer {
         align-items: center;
     }
 
-
     /* CSS for index.html */
 
     /* CSS for fresh.html */
@@ -207,7 +205,28 @@ footer {
 
     /* Header */
 
+    nav {
+        justify-content: space-around;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    .menu::before, .menu {
+        display: none;
+    }
+
     /* Footer */
+
+    .info-f {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    }
+
+    .info-f p {
+        grid-auto-flow: row;
+    }
 
     /* CSS for index.html */
 
