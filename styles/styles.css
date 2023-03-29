@@ -168,21 +168,27 @@ footer {
 
     /* Footer */
 
-    .info-f {
+    footer {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 65% 35%;
+        grid-template-rows: 1fr 1fr;
     }
 
-    .info-f:nth-child(1-2) {
+    .title-f {
         grid-column: 1/2;
+        grid-row: 1/2;
     }
 
-    .info-f:nth-child(3-4) {
+    .info-f {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        padding: 0 20px;
+    }
+
+    .social-f {
         grid-column: 2/3;
-    }
-
-    .info-f p:last-of-type {
-        
+        grid-row: 1/2;
+        align-items: center;
     }
 
 
