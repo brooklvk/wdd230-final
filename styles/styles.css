@@ -26,7 +26,7 @@ header {
 
 .title {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -45,8 +45,8 @@ header {
 nav {
     background-color: #E24D59;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: left;
 }
 
 nav a {
@@ -83,13 +83,43 @@ nav a {
 
 /* Footer */
 
+footer {
+    background-color: #2C7A67;
+}
+
+.title-f {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .title-f img {
     width: 100px;
     height: auto;
+    padding: 20px;
 }
 
 .title-f h2 {
     font-family: "Montserrat", sans-serif;
+    color: white;
+    padding: 0 20px;
+}
+
+.info-f {
+    padding: 20px;
+}
+
+.info-f p {
+    color: white;
+}
+
+.info-f a, .info-f a:visited {
+    text-decoration: underline;
+    color: rgb(228, 230, 255);
+}
+
+.info-f a:hover {
+    text-decoration: none;
 }
 
 .social-f {
@@ -99,6 +129,7 @@ nav a {
 
 .social-f img {
     width: 40px;
+    padding: 15px;
 }
 
 /* CSS for index.html */
