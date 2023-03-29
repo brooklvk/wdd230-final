@@ -122,6 +122,10 @@ footer {
     text-decoration: none;
 }
 
+.contact {
+
+}
+
 .social-f {
     display: flex;
     flex-direction: row;
@@ -142,6 +146,7 @@ footer {
 .make img {
     object-fit: cover;
     width: auto;
+    max-width: 680px;
     height: auto;
 }
 
@@ -150,7 +155,21 @@ footer {
     background-color: #2C7A67;
     color: white;
     padding: 20px;
-    margin-top: 50px;
+}
+
+.make-order {
+    background-color: #A6C269;
+    border-radius: 20px;
+    font-size: 1.3em;
+    text-align: center;
+    width: 130px;
+    padding: 20px;
+    margin: 10px auto;
+}
+
+.make-order a {
+    color: black; 
+    text-decoration: none;
 }
 
 
