@@ -4,10 +4,10 @@
 */
 
 /* COLORS: (adjusted from Illustrator to be visually similar) 
-    PINK:   #FF1C69
+    PINK:   #E24D59
     IVORY:  #F2E9D0
-    LIGHT GREEN:    #9AED3B
-    DARK GREEN:     #328c53
+    LIGHT GREEN:    #A6C269
+    DARK GREEN:     #2C7A67
 */
 
 /* CSS for all pages */
@@ -21,7 +21,13 @@ body {
 /* Header */
 
 header {
-    background-color: #328c53;
+    background-color: #2C7A67;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .title img {
@@ -31,6 +37,7 @@ header {
 
 .title h1 {
     font-family: "Montserrat", sans-serif;
+    color: white;
 }
 
 nav {
@@ -42,13 +49,22 @@ nav a {
     text-decoration: none;
 }
 
-.menu {
-    display: none;
+.menu::before {
+	content: "≡";
 }
+
+.responsive .respons-a, .responsive .social {
+	display: none;
+}
+
 
 /* a div w logo links */
 .social {
     
+}
+
+.social img {
+    width: 40px;
 }
 
 /* Main */
