@@ -5,6 +5,7 @@ const icon = document.querySelector(".menu");
 
 icon.addEventListener("click", () => {nav.classList.toggle("responsive")}, false);
 
+
 // Highlight active selection in nav 
 const respons = document.querySelector(".respons-a");
 respons.addEventListener("click", () => {respons.classList.toggle("active"), false})
