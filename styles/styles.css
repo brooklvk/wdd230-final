@@ -7,7 +7,7 @@
     PINK:   #E24D59
     IVORY:  #F2E9D0
     LIGHT GREEN:    #A6C269
-    DARK GREEN:     #2C7A67
+    DARK GREEN:     #245C4E
 */
 
 /* CSS for all pages */
@@ -21,7 +21,7 @@ body {
 /* Header */
 
 header {
-    background-color: #2C7A67;
+    background-color: #245C4E;
 }
 
 .title {
@@ -77,6 +77,7 @@ nav a {
 
 .social img {
     width: 40px;
+    height: auto;
 }
 
 /* Main - none*/
@@ -84,7 +85,7 @@ nav a {
 /* Footer */
 
 footer {
-    background-color: #2C7A67;
+    background-color: #245C4E;
 }
 
 .title-f {
@@ -129,6 +130,7 @@ footer {
 
 .social-f img {
     width: 40px;
+    height: auto;
     padding: 15px;
 }
 
@@ -143,6 +145,7 @@ footer {
 
 .gallery img {
     width: 500px;
+    height: auto;
     padding: 0;
     margin: 0 auto;
 }
@@ -152,7 +155,7 @@ footer {
     width: 400px;
     margin: 20px auto;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0 0 0;
     border-radius: 30px;
 }
 
@@ -160,6 +163,20 @@ footer {
     font-size: 1.3em;
 }
 
+#forecast {
+    background-color: #245C4E;
+    color: white;
+    border-radius: 0 0 30px 30px;
+    padding: 20px 0;
+}
+
+#forecast p:first-of-type {
+    font-size: 1.2em;
+}
+
+.coastal {
+
+}
 
 
 .make {
@@ -176,7 +193,7 @@ footer {
 
 .make h2 {
     position: absolute;
-    background-color: #2C7A67;
+    background-color: #245C4E;
     color: white;
     padding: 20px;
 }
