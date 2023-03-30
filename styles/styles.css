@@ -148,9 +148,17 @@ footer {
 }
 
 .weather {
-
+    background-color: #A6C269;
+    width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
 }
 
+.weather p:first-of-type {
+    font-size: 1.3em;
+}
 
 
 
