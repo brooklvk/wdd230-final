@@ -3,8 +3,8 @@
     Paragraphs/Links:    Playfair Display Regular 400
 */
 
-/* COLORS: (adjusted from Illustrator to be visually similar) 
-    PINK:   #E24D59
+/* COLORS: 
+    PINK:   #FF7581
     IVORY:  #F2E9D0
     LIGHT GREEN:    #A6C269
     DARK GREEN:     #245C4E
@@ -43,7 +43,7 @@ header {
 }
 
 nav {
-    background-color: #E24D59;
+    background-color: #A6C269;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -51,14 +51,13 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 20px;
     font-size: 1.3em;
 }
 
 .respons-a:hover {
-    background-color: #A6C269;
-    color: black;
+    background-color: #FF7581;
 }
 
 .menu::before {
@@ -152,7 +151,8 @@ footer {
 
 .weather {
     background-color: #A6C269;
-    width: 400px;
+    width: auto;
+    max-width: 350px;
     margin: 20px auto;
     text-align: center;
     padding: 20px 0 0 0;
@@ -164,8 +164,7 @@ footer {
 }
 
 #forecast {
-    background-color: #245C4E;
-    color: white;
+    background-color: #FF7581;
     border-radius: 0 0 30px 30px;
     padding: 20px 0;
 }
@@ -196,10 +195,11 @@ footer {
     background-color: #245C4E;
     color: white;
     padding: 20px;
+    margin-top: 50px;
 }
 
 .make-order {
-    background-color: #A6C269;
+    background-color: #FF7581;
     border-radius: 20px;
     font-size: 1.3em;
     text-align: center;

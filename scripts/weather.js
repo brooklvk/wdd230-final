@@ -8,12 +8,12 @@ const weatherIcon = document.querySelector("#weather-icon");
 const caption = document.querySelector("figcaption");
 const humidity = document.querySelector("#humidity");
 const sunset = document.querySelector("#sunset");
-const day1 = document.querySelector("#day1");
-const day2 = document.querySelector("#day2");
-const day3 = document.querySelector("#day3");
+// const day1 = document.querySelector("#day1");
+// const day2 = document.querySelector("#day2");
+// const day3 = document.querySelector("#day3");
 
 const url = `https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&units=imperial&appid=f3e31394eb86ed958067f299ae42b4c7`;
-const urlforecast = `https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&units=imperial&appid=f3e31394eb86ed958067f299ae42b4c7`;
+// const urlforecast = `https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&units=imperial&appid=f3e31394eb86ed958067f299ae42b4c7`;
 
 async function apiFetch(url) {
     try {
@@ -52,15 +52,40 @@ function displayResults(weatherData) {
     const setDate = new Date(set*1000).toLocaleString();
     sunset.innerHTML = `${setDate}`;
 
-    const temp1 = weatherData.main.temp;
-    day1.innerHTML = temp1;
+    // let day = null;
+    // switch (new Date().getDay()) {
+    //     case 0:
+    //       day = "Sunday";
+    //       break;
+    //     case 1:
+    //       day = "Monday";
+    //       break;
+    //     case 2:
+    //        day = "Tuesday";
+    //       break;
+    //     case 3:
+    //       day = "Wednesday";
+    //       break;
+    //     case 4:
+    //       day = "Thursday";
+    //       break;
+    //     case 5:
+    //       day = "Friday";
+    //       break;
+    //     case 6:
+    //       day = "Saturday";
+    //   }
 
-    const temp2 = weatherData.main.temp;
-    day2.innerHTML = temp2;
+    // const temp1 = weatherData.main.temp;
+    // day1.innerHTML = `${day}'s Temperature: ${temp1}`;
 
-    const temp3 = weatherData.main.temp;
-    day3.innerHTML = temp3;
+    // const temp2 = weatherData.main.temp;
+    // day2.innerHTML = `${day}'s Temperature: ${temp2}`;
+
+    // const temp3 = weatherData.main.temp;
+    // day3.innerHTML = `${day}'s Temperature: ${temp3}`;
+
 }
 
 apiFetch(url);
-apiFetch(urlforecast);
+// apiFetch(urlforecast);
