@@ -174,8 +174,14 @@ footer {
 }
 
 .coastal {
-
+    background-color: #A6C269;
+    border-radius: 30px;
+    width: 350px;
+    padding: 20px;
+    margin: 10px auto;
 }
+
+
 
 
 .make {
