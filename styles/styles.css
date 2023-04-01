@@ -135,6 +135,10 @@ footer {
 
 /* CSS for index.html */
 
+.intro {
+    
+}
+
 .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -174,11 +178,7 @@ footer {
 }
 
 .coastal {
-    background-color: #A6C269;
-    border-radius: 30px;
-    width: 350px;
-    padding: 20px;
-    margin: 10px auto;
+    
 }
 
 
@@ -217,6 +217,10 @@ footer {
 .make-order a {
     color: black; 
     text-decoration: none;
+}
+
+.submitted {
+    
 }
 
 
@@ -261,6 +265,7 @@ footer {
     .title-f {
         grid-column: 1/2;
         grid-row: 1/2;
+        padding: 0;
     }
 
     .info-f {
