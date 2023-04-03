@@ -35,13 +35,147 @@
             <h2>Order A Drink</h2>
             <form action="scripts/fruit.js" method="get">
                 <fieldset>
-                    The form requires the following items from the user:
-                    first name,
-                    email,
-                    phone number,
-                    three (3) select element inputs that are populated with the available fruit to put into a drink.
-                    Populate all three select elements with all of the available fruits.
-                    and, include an area that allows them to add special instructions, if needed.
+                    <legend>Contact Information</legend>
+                    <label class="style1">First Name* <input type="text" name="fname" required></label>
+                    <label class="style1">Email <input type="email" name="email" placeholder="example@gmail.com"></label>
+                    <label class="style1">Phone Number* <input type="tel" name="phone" required></label>                   
+                </fieldset>
+
+                <fieldset>
+                    <legend>Create Drink by Adding Fruits</legend>
+                    <label class="style1">Select 1st Fruit* </label>
+                    <select id="fruits" name="fruits" required>
+                        <option value="none">Choose one</option>
+                        <option value="apple">Apple</option>
+                        <option value="apricot">Apricot</option>
+                        <option value="avocado">Avocado</option>
+                        <option value="banana">Banana</option>
+                        <option value="blackberry">Blackberry</option>
+                        <option value="blueberry">Blueberry</option>
+                        <option value="cherry">Cherry</option>
+                        <option value="dragonfruit">Dragonfruit</option>
+                        <option value="durian">Durian</option>
+                        <option value="feijoa">Feijoa</option>
+                        <option value="fig">Fig</option>
+                        <option value="gooseberry">Gooseberry</option>
+                        <option value="grape">Grape</option>
+                        <option value="greenApple">Green Apple</option>
+                        <option value="guava">Guava</option>
+                        <option value="kiwi">Kiwi</option>
+                        <option value="kiwifruit">Kiwifruit</option>
+                        <option value="lemon">Lemon</option>
+                        <option value="lime">Lime</option>
+                        <option value="lingonberry">Lingonberry</option>
+                        <option value="lychee">Lychee</option>
+                        <option value="mango">Mango</option>
+                        <option value="melon">Melon</option>
+                        <option value="morus">Morus</option>
+                        <option value="orange">Orange</option>
+                        <option value="papaya">Papaya</option>
+                        <option value="passionfruit">Passionfruit</option>
+                        <option value="pear">Pear</option>
+                        <option value="persimmon">Persimmon</option>
+                        <option value="pineapple">Pineapple</option>
+                        <option value="pitahaya">Pitahaya</option>
+                        <option value="plum">Plum</option>
+                        <option value="pomegranate">Pomegranate</option>
+                        <option value="raspberry">Raspberry</option>
+                        <option value="strawberry">Strawberry</option>
+                        <option value="tangerine">Tangerine</option>
+                        <option value="tomato">Tomato</option>
+                        <option value="watermelon">Watermelon</option>
+                    </select>
+
+                    <label class="style1">Select 2nd Fruit* </label>
+                    <select id="fruits" name="fruits" required>
+                        <option value="none">Choose one</option>
+                        <option value="apple">Apple</option>
+                        <option value="apricot">Apricot</option>
+                        <option value="avocado">Avocado</option>
+                        <option value="banana">Banana</option>
+                        <option value="blackberry">Blackberry</option>
+                        <option value="blueberry">Blueberry</option>
+                        <option value="cherry">Cherry</option>
+                        <option value="dragonfruit">Dragonfruit</option>
+                        <option value="durian">Durian</option>
+                        <option value="feijoa">Feijoa</option>
+                        <option value="fig">Fig</option>
+                        <option value="gooseberry">Gooseberry</option>
+                        <option value="grape">Grape</option>
+                        <option value="greenApple">Green Apple</option>
+                        <option value="guava">Guava</option>
+                        <option value="kiwi">Kiwi</option>
+                        <option value="kiwifruit">Kiwifruit</option>
+                        <option value="lemon">Lemon</option>
+                        <option value="lime">Lime</option>
+                        <option value="lingonberry">Lingonberry</option>
+                        <option value="lychee">Lychee</option>
+                        <option value="mango">Mango</option>
+                        <option value="melon">Melon</option>
+                        <option value="morus">Morus</option>
+                        <option value="orange">Orange</option>
+                        <option value="papaya">Papaya</option>
+                        <option value="passionfruit">Passionfruit</option>
+                        <option value="pear">Pear</option>
+                        <option value="persimmon">Persimmon</option>
+                        <option value="pineapple">Pineapple</option>
+                        <option value="pitahaya">Pitahaya</option>
+                        <option value="plum">Plum</option>
+                        <option value="pomegranate">Pomegranate</option>
+                        <option value="raspberry">Raspberry</option>
+                        <option value="strawberry">Strawberry</option>
+                        <option value="tangerine">Tangerine</option>
+                        <option value="tomato">Tomato</option>
+                        <option value="watermelon">Watermelon</option>
+                    </select>
+
+                    <label class="style1">Select 3rd Fruit* </label>
+                    <select id="fruits" name="fruits" required>
+                        <option value="none">Choose one</option>
+                        <option value="apple">Apple</option>
+                        <option value="apricot">Apricot</option>
+                        <option value="avocado">Avocado</option>
+                        <option value="banana">Banana</option>
+                        <option value="blackberry">Blackberry</option>
+                        <option value="blueberry">Blueberry</option>
+                        <option value="cherry">Cherry</option>
+                        <option value="dragonfruit">Dragonfruit</option>
+                        <option value="durian">Durian</option>
+                        <option value="feijoa">Feijoa</option>
+                        <option value="fig">Fig</option>
+                        <option value="gooseberry">Gooseberry</option>
+                        <option value="grape">Grape</option>
+                        <option value="greenApple">Green Apple</option>
+                        <option value="guava">Guava</option>
+                        <option value="kiwi">Kiwi</option>
+                        <option value="kiwifruit">Kiwifruit</option>
+                        <option value="lemon">Lemon</option>
+                        <option value="lime">Lime</option>
+                        <option value="lingonberry">Lingonberry</option>
+                        <option value="lychee">Lychee</option>
+                        <option value="mango">Mango</option>
+                        <option value="melon">Melon</option>
+                        <option value="morus">Morus</option>
+                        <option value="orange">Orange</option>
+                        <option value="papaya">Papaya</option>
+                        <option value="passionfruit">Passionfruit</option>
+                        <option value="pear">Pear</option>
+                        <option value="persimmon">Persimmon</option>
+                        <option value="pineapple">Pineapple</option>
+                        <option value="pitahaya">Pitahaya</option>
+                        <option value="plum">Plum</option>
+                        <option value="pomegranate">Pomegranate</option>
+                        <option value="raspberry">Raspberry</option>
+                        <option value="strawberry">Strawberry</option>
+                        <option value="tangerine">Tangerine</option>
+                        <option value="tomato">Tomato</option>
+                        <option value="watermelon">Watermelon</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Special Instructions</legend>
+                    <label class="style1"><textarea name="instructions" cols="50" rows="7"></textarea></label>
                 </fieldset>
             </form>
         </div>
