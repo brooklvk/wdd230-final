@@ -136,7 +136,25 @@ footer {
 /* CSS for index.html */
 
 .intro {
+    width: 80%;
+    margin: 10px auto;
+}
 
+.intro p {
+    padding: 20px;
+}
+
+.intro p:first-of-type {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.intro p:nth-of-type(odd) {
+    background-color: #FF7581;
+}
+
+.intro p:nth-of-type(even) {
+    background-color: #A6C269;
 }
 
 .gallery {
@@ -147,7 +165,7 @@ footer {
 }
 
 .gallery img {
-    width: 500px;
+    width: 90%;
     height: auto;
     padding: 0;
     margin: 0 auto;
@@ -182,8 +200,6 @@ footer {
 }
 
 
-
-
 .make {
     display: flex;
     justify-content: center;
@@ -191,7 +207,7 @@ footer {
 
 .make img {
     object-fit: cover;
-    width: auto;
+    width: 90%;
     max-width: 680px;
     height: auto;
 }
@@ -200,11 +216,12 @@ footer {
     position: absolute;
     background-color: #245C4E;
     color: white;
+    width: 60%;
     padding: 20px;
     margin-top: 50px;
 }
 
-.make-order {
+.make-order, .submit {
     background-color: #FF7581;
     border-radius: 20px;
     font-size: 1.3em;
@@ -214,7 +231,7 @@ footer {
     margin: 10px auto;
 }
 
-.make-order a {
+.make-order a, .submit a {
     color: black; 
     text-decoration: none;
 }
@@ -227,17 +244,37 @@ footer {
 /* CSS for fresh.html */
 
 .order-form {
-    
+    width: 90%;
+    margin: 10px auto;
 }
+
+.order-form h2 {
+    text-align: center;
+    color: #245C4E;
+}
+
+fieldset, label {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, select {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 18px;
+    padding: 5px;
+}
+
+label {
+    padding-top: 10px;
+}
+
+
 
 
 /* CSS for about-us.html */
 
 
 /* CSS for attributions.html - none */
-
-
-
 
 
 /* Media queries */
@@ -291,7 +328,19 @@ footer {
 
     /* CSS for index.html */
 
+    .make img {
+        width: auto;
+    }
+
+    .make h2 {
+        width: 550px;
+    }
+
     /* CSS for fresh.html */
+
+    .order-form {
+        width: 500px;
+    }
 
     /* CSS for about-us.html */
 }
@@ -314,6 +363,11 @@ footer {
 
     .menu::before, .menu {
         display: none;
+    }
+
+    .responsive .respons-a, .responsive .social {
+        display: block;
+        padding: 15px;
     }
 
     /* Footer */

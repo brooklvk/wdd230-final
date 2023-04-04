@@ -33,7 +33,7 @@
     <main>
         <div class="order-form">
             <h2>Order A Drink</h2>
-            <form action="scripts/fruit.js" method="get">
+            <form method="get">
                 <fieldset>
                     <legend>Contact Information</legend>
                     <label class="style1">First Name* <input type="text" name="fname" required></label>
@@ -44,7 +44,7 @@
                 <fieldset>
                     <legend>Create Drink by Adding Fruits</legend>
                     <label class="style1">Select 1st Fruit* </label>
-                    <select id="fruits" name="fruits" required>
+                    <select id="fruit1" name="fruits" required>
                         <option value="none">Choose one</option>
                         <option value="apple">Apple</option>
                         <option value="apricot">Apricot</option>
@@ -87,7 +87,7 @@
                     </select>
 
                     <label class="style1">Select 2nd Fruit* </label>
-                    <select id="fruits" name="fruits" required>
+                    <select id="fruit2" name="fruits" required>
                         <option value="none">Choose one</option>
                         <option value="apple">Apple</option>
                         <option value="apricot">Apricot</option>
@@ -130,7 +130,7 @@
                     </select>
 
                     <label class="style1">Select 3rd Fruit* </label>
-                    <select id="fruits" name="fruits" required>
+                    <select id="fruit3" name="fruits" required>
                         <option value="none">Choose one</option>
                         <option value="apple">Apple</option>
                         <option value="apricot">Apricot</option>
@@ -174,8 +174,9 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>Special Instructions</legend>
-                    <label class="style1"><textarea name="instructions" cols="50" rows="7"></textarea></label>
+                    <legend>Finish Order</legend>
+                    <label class="style1">Special Instructions <textarea name="instructions"></textarea></label>
+                    <p class="submit"><a href="#top">Order Now</a></p>
                 </fieldset>
             </form>
         </div>
@@ -205,6 +206,6 @@
         </div>
     </footer>
 <script src="scripts/main.js"></script>
-<script src="scripts/weather.js"></script>
+<script src="scripts/fresh.js"></script>
 </body>
 </html>
