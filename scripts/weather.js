@@ -6,14 +6,16 @@ const temperature = document.querySelector("#temperature");
 const feelsLike = document.querySelector("#feels-like");
 const weatherIcon = document.querySelector("#weather-icon");
 const caption = document.querySelector("figcaption");
+
 const humidity = document.querySelector("#humidity");
 const sunset = document.querySelector("#sunset");
-// const day1 = document.querySelector("#day1");
-// const day2 = document.querySelector("#day2");
-// const day3 = document.querySelector("#day3");
+
+const day1 = document.querySelector("#day1");
+const day2 = document.querySelector("#day2");
+const day3 = document.querySelector("#day3");
 
 const url = `https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&units=imperial&appid=f3e31394eb86ed958067f299ae42b4c7`;
-// const urlforecast = `https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&units=imperial&appid=f3e31394eb86ed958067f299ae42b4c7`;
+const urlforecast = `https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&units=imperial&appid=f3e31394eb86ed958067f299ae42b4c7`;
 
 async function apiFetch(url) {
     try {
@@ -46,46 +48,22 @@ function displayResults(weatherData) {
     caption.textContent = desc;
 
     const humid = weatherData.main.humidity;
-    humidity.innerHTML = `${humid.toFixed(0)}`;
+    if (humid != null) {
+        humidity.textContent = `${humid.toFixed(0)}`;
+    }
+    else if (humid == null) {
+        humidity.textContent = "N/A";
+    }
 
     const set = weatherData.sys.sunset;
     const setDate = new Date(set*1000).toLocaleString();
-    sunset.innerHTML = `${setDate}`;
+    sunset.textContent = `${setDate}`;
 
-    // let day = null;
-    // switch (new Date().getDay()) {
-    //     case 0:
-    //       day = "Sunday";
-    //       break;
-    //     case 1:
-    //       day = "Monday";
-    //       break;
-    //     case 2:
-    //        day = "Tuesday";
-    //       break;
-    //     case 3:
-    //       day = "Wednesday";
-    //       break;
-    //     case 4:
-    //       day = "Thursday";
-    //       break;
-    //     case 5:
-    //       day = "Friday";
-    //       break;
-    //     case 6:
-    //       day = "Saturday";
-    //   }
-
-    // const temp1 = weatherData.main.temp;
-    // day1.innerHTML = `${day}'s Temperature: ${temp1}`;
-
-    // const temp2 = weatherData.main.temp;
-    // day2.innerHTML = `${day}'s Temperature: ${temp2}`;
-
-    // const temp3 = weatherData.main.temp;
-    // day3.innerHTML = `${day}'s Temperature: ${temp3}`;
+    day1.textContent = "brooklyn";
+    day2.innerHTML = "president";
+    day3.innerHTML = "today";
 
 }
 
 apiFetch(url);
-// apiFetch(urlforecast);
+apiFetch(urlforecast);
