@@ -137,6 +137,9 @@ function displayFruitsOrdered(data) {
     // Don't display form and 'order a drink' title 
     document.querySelector("form").style.display = "none";
     document.querySelector(".order-form h2").style.display = "none";
+
+    // Display summary instead 
+    document.querySelector(".summary").style.display = "block";
 }
 
 // Add onlick listener to button, run functions 

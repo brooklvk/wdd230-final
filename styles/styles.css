@@ -5,8 +5,11 @@
 
 /* COLORS: 
     PINK:   #FF7581
+    LIGHTER PINK: #FF98A1
     IVORY:  #F2E9D0
+    DARKER IVORY: #C3BAA2
     LIGHT GREEN:    #A6C269
+    LIGHT BLUE: rgb(228, 230, 255)
     DARK GREEN:     #245C4E
 */
 
@@ -202,7 +205,7 @@ footer {
 }
 
 .coastal {
-    background-color: #c3baa2;
+    background-color: #C3BAA2;
     width: 50%;
     padding: 20px;
     margin: 10px auto;
@@ -294,6 +297,19 @@ input:valid {
     font-size: 1.3em;
     padding: 20px;
     border-radius: 20px;
+}
+
+.summary {
+    background-color: #FF98A1;
+    width: auto;
+    max-width: 400px;
+    padding: 20px;
+    margin: 10px auto;
+    display: none;
+}
+
+.summary h2, .summary h3 {
+    text-align: center;
 }
 
 
