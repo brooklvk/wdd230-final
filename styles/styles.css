@@ -262,7 +262,7 @@ footer {
     margin: 10px auto;
 }
 
-.order-form h2 {
+.order-form h2, .page-title {
     text-align: center;
     color: #245C4E;
 }
