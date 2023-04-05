@@ -5,10 +5,10 @@
 const temperature = document.querySelector("#temperature");
 const feelsLike = document.querySelector("#feels-like");
 const weatherIcon = document.querySelector("#weather-icon");
-const caption = document.querySelector("figcaption");
+const caption = document.querySelector("figp");
 
-const humidity = document.querySelector("#humidity");
-const sunset = document.querySelector("#sunset");
+// const humidity = document.querySelector("#humidity");
+// const sunset = document.querySelector("#sunset");
 
 const day1 = document.querySelector("#day1");
 const day2 = document.querySelector("#day2");
@@ -22,7 +22,7 @@ async function apiFetch(url) {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data); 
+            // console.log(data); 
             displayResults(data);
         } 
         else {
@@ -47,21 +47,21 @@ function displayResults(weatherData) {
     weatherIcon.setAttribute("alt", desc);
     caption.textContent = desc;
 
-    const humid = weatherData.main.humidity;
-    if (humid != null) {
-        humidity.textContent = `${humid.toFixed(0)}`;
-    }
-    else if (humid == null) {
-        humidity.textContent = "N/A";
-    }
+    // const humid = weatherData.main.humidity;
+    // if (humid != null) {
+    //     humidity.textContent = `${humid.toFixed(0)}`;
+    // }
+    // else if (humid == null) {
+    //     humidity.textContent = "N/A";
+    // }
 
-    const set = weatherData.sys.sunset;
-    const setDate = new Date(set*1000).toLocaleString();
-    sunset.textContent = `${setDate}`;
+    // const set = weatherData.sys.sunset;
+    // const setDate = new Date(set*1000).toLocaleString();
+    // sunset.textContent = `${setDate}`;
 
-    day1.textContent = "brooklyn";
-    day2.innerHTML = "president";
-    day3.innerHTML = "today";
+    day1.textContent = "";
+    day2.innerHTML = "";
+    day3.innerHTML = "";
 
 }
 
