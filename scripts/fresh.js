@@ -6,12 +6,13 @@ async function getFruitData() {
     displayFruitsOrdered(data);
 }
 
+// Keep track of number of orders submitted for home page 
+let numOfOrders = 0;
+
 function displayFruitsOrdered(data) {
 
-    // Keep track of number of orders submitted for home page 
-    // let numOfOrders = 0;
-    // localStorage.setItem("numOfOrders", numOfOrders);
-    // localStorage.clear;
+    numOfOrders += 1;
+    localStorage.setItem("numOfOrders", numOfOrders);
 
     // Select 'summary' div to hold output information 
     const summary = document.querySelector(".summary");
@@ -144,3 +145,5 @@ function displayFruitsOrdered(data) {
 
 // Add onlick listener to button, run functions 
 document.querySelector("button").addEventListener("click", getFruitData);
+
+// localStorage.clear;

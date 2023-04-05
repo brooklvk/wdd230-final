@@ -255,7 +255,6 @@ footer {
     margin: 10px auto;
 }
 
-
 /* CSS for fresh.html */
 
 .order-form {
@@ -312,15 +311,22 @@ input:valid {
     text-align: center;
 }
 
-
-
-
-
 /* CSS for about-us.html */
 
+.intro h2 {
+    background-color: #245C4E;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 
+.intro a, .intro a:visited {
+    color: white;
+}
 
-
+.intro a:hover {
+    text-decoration: none;
+}
 
 /* Media queries */
 
@@ -426,7 +432,6 @@ input:valid {
         width: 500px;
     }
 
-    /* CSS for about-us.html */
 }
 
 
@@ -464,27 +469,6 @@ input:valid {
     .info-f p {
         grid-auto-flow: row;
         margin: 0;
-    }
-
-    /* CSS for index.html */
-
-    /* CSS for fresh.html */
-
-    /* CSS for about-us.html */
-
-    .intro h2 {
-        background-color: #245C4E;
-        color: white;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .intro a, .intro a:visited {
-        color: white;
-    }
-
-    .intro a:hover {
-        text-decoration: none;
     }
 
 }

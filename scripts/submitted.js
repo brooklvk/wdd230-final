@@ -1,3 +1,7 @@
-//use localstorage to store number of drinks submitted from fresh page 
-//display on home page # of drinks submitted 
+// Display # of drinks submitted from localstorage 
+const submitted = document.querySelector(".submitted");
+const orders = localStorage.getItem("numOfOrders");
+const p = document.createElement("p");
 
+p.innerHTML = `You have submitted ${orders} drink order(s) on our Fresh page!`;
+submitted.appendChild(p);
