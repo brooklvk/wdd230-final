@@ -115,23 +115,23 @@ function displayFruitsOrdered(data) {
     summary.appendChild(fruitMessage);
 
     const totalCarbs = document.createElement("p");
-    totalCarbs.innerHTML = `Total Carbohydrates: ${carbsData}`;
+    totalCarbs.innerHTML = `Total Carbohydrates: ${carbsData.toFixed(2)}`;
     summary.appendChild(totalCarbs);
 
     const totalProtein = document.createElement("p");
-    totalProtein.innerHTML = `Total Protein: ${proteinData}`;
+    totalProtein.innerHTML = `Total Protein: ${proteinData.toFixed(2)}`;
     summary.appendChild(totalProtein);
 
     const totalFat = document.createElement("p");
-    totalFat.innerHTML = `Total Fat: ${fatData}`;
+    totalFat.innerHTML = `Total Fat: ${fatData.toFixed(2)}`;
     summary.appendChild(totalFat);
 
     const totalSugar = document.createElement("p");
-    totalSugar.innerHTML = `Total Sugar: ${sugarData}`;
+    totalSugar.innerHTML = `Total Sugar: ${sugarData.toFixed(2)}`;
     summary.appendChild(totalSugar);
 
     const totalCalories = document.createElement("p");
-    totalCalories.innerHTML = `Total Calories: ${caloriesData}`;
+    totalCalories.innerHTML = `Total Calories: ${caloriesData.toFixed(2)}`;
     summary.appendChild(totalCalories);
     
     // Don't display form and 'order a drink' title 
