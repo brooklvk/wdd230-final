@@ -36,14 +36,14 @@
             <form method="get">
                 <fieldset>
                     <legend>Contact Information</legend>
-                    <label class="style1">First Name* <input type="text" name="fname" required></label>
-                    <label class="style1">Email <input type="email" name="email" placeholder="example@gmail.com"></label>
-                    <label class="style1">Phone Number* <input type="tel" name="phone" required></label>                   
+                    <label>First Name* <input type="text" name="fname" required></label>
+                    <label>Email <input type="email" name="email" placeholder="example@gmail.com"></label>
+                    <label>Phone Number* <input type="tel" name="phone" required></label>                   
                 </fieldset>
 
                 <fieldset>
                     <legend>Create Drink by Adding Fruits</legend>
-                    <label class="style1">Select 1st Fruit* </label>
+                    <label>Select 1st Fruit* </label>
                     <select id="fruit1" name="fruits" required>
                         <option value="none">Choose one</option>
                         <option value="apple">Apple</option>
@@ -86,7 +86,7 @@
                         <option value="watermelon">Watermelon</option>
                     </select>
 
-                    <label class="style1">Select 2nd Fruit* </label>
+                    <label>Select 2nd Fruit* </label>
                     <select id="fruit2" name="fruits" required>
                         <option value="none">Choose one</option>
                         <option value="apple">Apple</option>
@@ -129,7 +129,7 @@
                         <option value="watermelon">Watermelon</option>
                     </select>
 
-                    <label class="style1">Select 3rd Fruit* </label>
+                    <label>Select 3rd Fruit* </label>
                     <select id="fruit3" name="fruits" required>
                         <option value="none">Choose one</option>
                         <option value="apple">Apple</option>
@@ -175,11 +175,12 @@
 
                 <fieldset>
                     <legend>Finish Order</legend>
-                    <label class="style1">Special Instructions <textarea name="instructions"></textarea></label>
-                    <p class="submit"><a href="#top">Order Now</a></p>
+                    <label>Special Instructions <textarea name="instructions"></textarea></label>
+                    <p><button type="submit" class="submit">Order Now</button></p>
                 </fieldset>
             </form>
         </div>
+        <div class="summary"></div>
     </main>
     <footer>
         <div class="title-f">

@@ -229,7 +229,7 @@ footer {
     margin-top: 50px;
 }
 
-.make-order, .submit {
+.make-order {
     background-color: #FF7581;
     border-radius: 20px;
     font-size: 1.3em;
@@ -239,7 +239,7 @@ footer {
     margin: 10px auto;
 }
 
-.make-order a, .submit a {
+.make-order a {
     color: black; 
     text-decoration: none;
 }
@@ -279,6 +279,15 @@ input, textarea, select {
 label {
     padding-top: 10px;
 }
+
+.submit {
+    font-family: "Playfair Display", sans-serif;
+    background-color: #FF7581;
+    font-size: 1.3em;
+    padding: 20px;
+    border-radius: 20px;
+}
+
 
 
 
