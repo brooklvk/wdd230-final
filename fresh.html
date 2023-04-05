@@ -33,18 +33,19 @@
     <main>
         <div class="order-form">
             <h2>Order A Drink</h2>
-            <form method="get">
+            <form action="fresh.html" method="get">
                 <fieldset>
                     <legend>Contact Information</legend>
-                    <label>First Name* <input type="text" name="fname" required></label>
-                    <label>Email <input type="email" name="email" placeholder="example@gmail.com"></label>
-                    <label>Phone Number* <input type="tel" name="phone" required></label>                   
+                    <p>Note: Contact Information inputs are required</p>
+                    <label>First Name <input id="fname" type="text" name="fname" aria-required="true" required/></label>
+                    <label>Email <input id="email" type="email" name="email" placeholder="example@gmail.com" aria-required="true" required/></label>
+                    <label>Phone Number <input id="phone" type="tel" name="phone" aria-required="true" required/></label>                   
                 </fieldset>
 
                 <fieldset>
                     <legend>Create Drink by Adding Fruits</legend>
-                    <label>Select 1st Fruit* </label>
-                    <select id="fruit1" name="fruits" required>
+                    <label>Select 1st Fruit </label>
+                    <select id="fruit1" name="fruit1">
                         <option value="none">Choose one</option>
                         <option value="apple">Apple</option>
                         <option value="apricot">Apricot</option>
@@ -86,8 +87,8 @@
                         <option value="watermelon">Watermelon</option>
                     </select>
 
-                    <label>Select 2nd Fruit* </label>
-                    <select id="fruit2" name="fruits" required>
+                    <label>Select 2nd Fruit </label>
+                    <select id="fruit2" name="fruit2">
                         <option value="none">Choose one</option>
                         <option value="apple">Apple</option>
                         <option value="apricot">Apricot</option>
@@ -129,8 +130,8 @@
                         <option value="watermelon">Watermelon</option>
                     </select>
 
-                    <label>Select 3rd Fruit* </label>
-                    <select id="fruit3" name="fruits" required>
+                    <label>Select 3rd Fruit </label>
+                    <select id="fruit3" name="fruit3">
                         <option value="none">Choose one</option>
                         <option value="apple">Apple</option>
                         <option value="apricot">Apricot</option>
@@ -175,8 +176,8 @@
 
                 <fieldset>
                     <legend>Finish Order</legend>
-                    <label>Special Instructions <textarea name="instructions"></textarea></label>
-                    <p><button type="button" class="submit">Order Now</button></p>
+                    <label>Special Instructions <textarea id="instructions" name="instructions"></textarea></label>
+                    <p><button type="button" id="submit">Order Now</button></p>
                 </fieldset>
             </form>
         </div>

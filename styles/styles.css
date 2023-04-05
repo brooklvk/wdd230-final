@@ -280,7 +280,15 @@ label {
     padding-top: 10px;
 }
 
-.submit {
+input:required {
+    border-left: solid red 10px;
+}
+
+input:valid {
+    border-left: solid green 10px;
+}
+
+#submit {
     font-family: "Playfair Display", sans-serif;
     background-color: #FF7581;
     font-size: 1.3em;
