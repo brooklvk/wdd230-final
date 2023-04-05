@@ -134,31 +134,31 @@ footer {
     padding: 15px;
 }
 
-/* CSS for index.html */
+/* CSS for index.html (and some for about-us.html */
 
-.intro {
+.home, .intro, .story {
     width: 80%;
     margin: 10px auto;
 }
 
-.intro p {
+.home p, .intro p, .story p {
     padding: 20px;
 }
 
-.intro p:first-of-type {
+.home p:first-of-type, .intro p:first-of-type, .story p:first-of-type {
     text-align: center;
     font-size: 1.2em;
 }
 
-.intro p:nth-of-type(odd) {
+.home p:nth-of-type(odd), .intro p:nth-of-type(odd), .story p:nth-of-type(odd) {
     background-color: #FF7581;
 }
 
-.intro p:nth-of-type(even) {
+.home p:nth-of-type(even), .intro p:nth-of-type(even), .story p:nth-of-type(even) {
     background-color: #A6C269;
 }
 
-.intro img {
+.home img, .intro img {
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -314,18 +314,20 @@ input:valid {
 
 /* CSS for about-us.html */
 
-.intro h2 {
+.intro h2, .story h2 {
     background-color: #245C4E;
     color: white;
     text-align: center;
     padding: 20px;
+    max-width: 500px;
+    margin: 10px auto;
 }
 
-.intro a, .intro a:visited {
+.story a, .story a:visited {
     color: white;
 }
 
-.intro a:hover {
+.story a:hover {
     text-decoration: none;
 }
 
@@ -434,7 +436,7 @@ input:valid {
         grid-template-rows: 1fr 400px auto;
     }
 
-    .intro img {
+    .home img, .intro img {
         width: 500px;
     }
 
@@ -443,7 +445,7 @@ input:valid {
         height: auto;
     }
 
-    .intro {
+    .home {
         grid-column: 1/2;
         grid-row: 1/2;
         display: flex;
@@ -452,7 +454,7 @@ input:valid {
         width: 100%;
     }
 
-    .intro p {
+    .home p, .intro p, .story p {
         max-width: 500px;
         margin: 10px auto;
     }
@@ -500,6 +502,29 @@ input:valid {
         grid-row: 3/4;
         width: 270px;
         margin-bottom: 30px;
+    }
+
+    /* CSS for about-us.html */
+
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .intro {
+        grid-column: 1/2;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .intro h2, .story h2 {
+        width: 500px;
+    }
+
+    .story {
+        grid-column: 2/3;
     }
 
 }
